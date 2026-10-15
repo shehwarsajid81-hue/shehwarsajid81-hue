@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shehwar Sajid | Senior Content Strategist & AI Operations Specialist</title>
+  <meta name="description" content="Senior Content Strategist, Editor & AI Operations Specialist with 6+ years of experience in B2B, RegTech, E-Commerce, and AI workflow automation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-main: #0B0F17;
+      --bg-card: #131A26;
+      --bg-card-hover: #1A2436;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-accent: rgba(16, 185, 129, 0.3);
+      --primary: #10B981;
+      --primary-glow: rgba(16, 185, 129, 0.25);
+      --secondary: #6366F1;
+      --text-main: #F3F4F6;
+      --text-muted: #9CA3AF;
+      --text-dim: #6B7280;
+      --font-main: 'Plus Jakarta Sans', sans-serif;
+      --font-heading: 'Space Grotesk', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      font-family: var(--font-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .background-glow {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 0;
+      background: 
+        radial-gradient(circle at 15% 15%, rgba(16, 185, 129, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 65%, rgba(99, 102, 241, 0.08) 0%, transparent 45%);
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      padding: 24px 0;
+      position: sticky;
+      top: 0;
+      background: rgba(11, 15, 23, 0.85);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #FFF;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo span {
+      color: var(--primary);
+    }
+
+    nav {
+      display: flex;
+      gap: 32px;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: #042F1A;
+      box-shadow: 0 4px 20px var(--primary-glow);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px var(--primary-glow);
+      background-color: #34D399;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: rgba(16, 185, 129, 0.05);
+    }
+
+    .hero {
+      padding: 100px 0 60px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 50px;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid var(--border-accent);
+      color: var(--primary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      background-color: var(--primary);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--primary);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    .hero h1 {
+      font-family: var(--font-heading);
+      font-size: 3.5rem;
+      line-height: 1.15;
+      font-weight: 700;
+      margin-bottom: 24px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(135deg, #10B981 0%, #6366F1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      max-width: 720px;
+      margin-bottom: 36px;
+      font-weight: 400;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .metrics-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+      margin-top: 60px;
+      padding: 32px;
+      background: var(--bg-card);
+      border-radius: 16px;
+      border: 1px solid var(--border-color);
+    }
+
+    .metric-item h3 {
+      font-family: var(--font-heading);
+      font-size: 2.25rem;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .metric-item p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-top: 4px;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      margin-bottom: 40px;
+      max-width: 600px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .service-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 32px;
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+      border-color: var(--border-accent);
+      transform: translateY(-4px);
+    }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(16, 185, 129, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+    }
+
+    .service-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      padding: 8px 20px;
+      border-radius: 30px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn.active, .tab-btn:hover {
+      background: var(--primary);
+      color: #042F1A;
+      border-color: var(--primary);
+      font-weight: 600;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 24px;
+    }
+
+    .portfolio-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s ease;
+    }
+
+    .portfolio-card:hover {
+      border-color: var(--border-accent);
+      background: var(--bg-card-hover);
+      transform: translateY(-4px);
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .portfolio-card h3 {
+      font-size: 1.15rem;
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+
+    .portfolio-card p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 24px;
+    }
+
+    .portfolio-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .portfolio-link:hover {
+      text-decoration: underline;
+    }
+
+    .ai-showcase {
+      background: linear-gradient(180deg, var(--bg-card) 0%, rgba(19, 26, 38, 0.5) 100%);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 40px;
+      margin-top: 40px;
+    }
+
+    .ai-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .ai-item {
+      background: rgba(11, 15, 23, 0.6);
+      border: 1px solid var(--border-color);
+      padding: 24px;
+      border-radius: 12px;
+    }
+
+    .ai-item h4 {
+      color: #FFF;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .ai-item p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding: 40px 0;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.9rem;
+    }
+
+    .copy-toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--primary);
+      color: #042F1A;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      display: none;
+      z-index: 1000;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.5rem; }
+      nav { display: none; }
+      .metrics-bar { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background-glow"></div>
+
+  <header>
+    <div class="container nav-wrapper">
+      <a href="#" class="logo">Shehwar<span>.</span>Sajid</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Capabilities</a>
+        <a href="#portfolio">Featured Work</a>
+        <a href="#ai-workflows">AI Engineering</a>
+      </nav>
+      <a href="mailto:shehwarsajid81@gmail.com" class="btn btn-outline">Let's Connect</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        Available for Content Strategy & AI Operations
+      </div>
+      <h1>Senior Content Strategist,<br>Editor & <span>AI Operations</span> Specialist</h1>
+      <p class="hero-subtitle">
+        6+ years of experience crafting high-impact technical, B2B, and regulatory content aligned with modern search standards (E-E-A-T & Helpful Content) and AI workflow automation.
+      </p>
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn btn-primary">Explore Portfolio ↗</a>
+        <button onclick="copyEmail()" class="btn btn-outline">📋 Copy Email</button>
+      </div>
+
+      <div class="metrics-bar">
+        <div class="metric-item">
+          <h3>6+</h3>
+          <p>Years Experience</p>
+        </div>
+        <div class="metric-item">
+          <h3>100%</h3>
+          <p>E-E-A-T & SERP Alignment</p>
+        </div>
+        <div class="metric-item">
+          <h3>ChatGPT/Claude</h3>
+          <p>Prompt & Workflow Models</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2 class="section-title">Core Capabilities</h2>
+      <p class="section-desc">Building scalable content engines combining deep human research with modern AI toolsets.</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🔍</div>
+          <h3>Content Strategy & SEO</h3>
+          <p>Data-backed content roadmaps, topical authority clusters, E-E-A-T optimization, and search intent alignment designed to drive organic authority.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🤖</div>
+          <h3>AI Model Training & Workflows</h3>
+          <p>Engineering customized prompt frameworks for ChatGPT and Claude to automate product descriptions, metadata generation, and copyediting pipelines.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">✍️</div>
+          <h3>B2B & Technical Content</h3>
+          <p>Writing and editing complex topics across B2B e-commerce, supply chain logistics, legal compliance/regulatory guides, and technical education.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h2 class="section-title">Selected Published Work</h2>
+      <p class="section-desc">Real articles, technical guides, and educational frameworks across leading industry platforms.</p>
+
+      <div class="tabs">
+        <button class="tab-btn active" onclick="filterPortfolio('all')">All Work</button>
+        <button class="tab-btn" onclick="filterPortfolio('b2b')">B2B & E-Commerce</button>
+        <button class="tab-btn" onclick="filterPortfolio('regulatory')">Regulatory & Legal</button>
+        <button class="tab-btn" onclick="filterPortfolio('tech')">Tech & Education</button>
+      </div>
+
+      <div class="portfolio-grid">
+        
+        <div class="portfolio-card" data-category="b2b">
+          <div>
+            <span class="tag">SeeBiz Marketplace • B2B</span>
+            <h3>Why Do Wholesalers Need an Automated Inventory System?</h3>
+            <p>An in-depth article analyzing modern wholesale supply chains and how automated inventory systems prevent stockouts and cut operational costs.</p>
+          </div>
+          <a href="https://www.seebiz.com/blog/why-do-wholesalers-need-an-automated-inventory-system/" target="_blank" rel="noopener" class="portfolio-link">Read Published Article ↗</a>
+        </div>
+
+        <div class="portfolio-card" data-category="b2b">
+          <div>
+            <span class="tag">SeeBiz Marketplace • Logistics</span>
+            <h3>What Are Distributors and Their Role in the Supply Chain</h3>
+            <p>Comprehensive guide breaking down distribution logistics, wholesale tiers, and supply chain operational frameworks.</p>
+          </div>
+          <a href="https://www.seebiz.com/blog/distributors/" target="_blank" rel="noopener" class="portfolio-link">Read Published Article ↗</a>
+        </div>
+
+        <div class="portfolio-card" data-category="b2b">
+          <div>
+            <span class="tag">SeeBiz Marketplace • Operations</span>
+            <h3>Wholesale Inventory Management: Complete Guide</h3>
+            <p>Data-backed strategic guide on managing wholesale inventory turnover, demand forecasting, and warehouse efficiency.</p>
+          </div>
+          <a href="https://www.seebiz.com/blog/wholesale-inventory-management-everything-that-you-should-know/" target="_blank" rel="noopener" class="portfolio-link">Read Published Article ↗</a>
+        </div>
+
+        <div class="portfolio-card" data-category="b2b">
+          <div>
+            <span class="tag">SeeBiz Marketplace • Strategy</span>
+            <h3>How Procurement and Supply Chain Management Are Related</h3>
+            <p>Strategic breakdown connecting procurement processes with supply chain execution for modern enterprise growth.</p>
+          </div>
+          <a href="https://www.seebiz.com/blog/procurement-and-supply-chain-management/" target="_blank" rel="noopener" class="portfolio-link">Read Published Article ↗</a>
+        </div>
+
+        <div class="portfolio-card" data-category="regulatory">
+          <div>
+            <span class="tag">Klarity Kratom • Compliance</span>
+            <h3>State of Kratom Legality in the US: 2025 Guide</h3>
+            <p>Comprehensive regulatory and legal tracking hub detailing state-by-state laws and compliance requirements.</p>
+          </div>
+          <a href="https://klaritykratom.com/blog/kratom-news/current-state-of-kratom-legality-in-us/" target="_blank" rel="noopener" class="portfolio-link">Read Published Article ↗</a>
+        </div>
+
+        <div class="portfolio-card" data-category="regulatory">
+          <div>
+            <span class="tag">Klarity Kratom • Technical Guide</span>
+            <h3>Understanding Batches, Alkaloids & Natural Variation</h3>
+            <p>Technical educational guide breaking down botanical science, laboratory testing, and batch consistency for readers.</p>
+          </div>
+          <a href="https://klaritykratom.com/blog/kratom-strains/understanding-kratom-batches/" target="_blank" rel="noopener" class="portfolio-link">Read Published Article ↗</a>
+        </div>
+
+        <div class="portfolio-card" data-category="tech">
+          <div>
+            <span class="tag">Qalam IT • Campaigns</span>
+            <h3>Tech Educational Content & Social Strategy</h3>
+            <p>Multi-channel content campaigns designed to simplify complex tech topics for educational engagement.</p>
+          </div>
+          <a href="https://www.linkedin.com/company/qalam-it/posts/?feedView=all" target="_blank" rel="noopener" class="portfolio-link">View Social Campaign ↗</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="ai-workflows">
+      <div class="ai-showcase">
+        <h2 class="section-title">🤖 AI Training & Workflow Engineering</h2>
+        <p class="section-desc">How I leverage ChatGPT & Claude to scale enterprise content without sacrificing quality.</p>
+
+        <div class="ai-grid">
+          <div class="ai-item">
+            <h4>⚡ Metadata & Description Engines</h4>
+            <p>Trained prompt structures for ChatGPT and Claude to auto-generate brand-tailored, SEO-optimized product descriptions and metadata at scale.</p>
+          </div>
+          <div class="ai-item">
+            <h4>🔍 Editorial & Proofreading Pipelines</h4>
+            <p>Built specialized AI editing models configured to enforce brand voice, style guide compliance, and structural readability for first-pass reviews.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Shehwar Sajid. Built for GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <div id="copyToast" class="copy-toast">Email copied to clipboard!</div>
+
+  <script>
+    function filterPortfolio(category) {
+      const cards = document.querySelectorAll('.portfolio-card');
+      const buttons = document.querySelectorAll('.tab-btn');
+
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function copyEmail() {
+      navigator.clipboard.writeText('shehwarsajid81@gmail.com');
+      const toast = document.getElementById('copyToast');
+      toast.style.display = 'block';
+      setTimeout(() => {
+        toast.style.display = 'none';
+      }, 2500);
+    }
+  </script>
+</body>
+</html>
