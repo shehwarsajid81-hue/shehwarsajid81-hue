@@ -108,7 +108,17 @@
       background-color: var(--primary-light);
     }
 
-    .hero { padding: 70px 0 50px; }
+    .hero { padding: 60px 0 50px; }
+
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--primary-light);
+      box-shadow: 0 4px 16px rgba(67, 56, 202, 0.12);
+      margin-bottom: 20px;
+    }
 
     .badge {
       display: inline-flex;
@@ -121,7 +131,7 @@
       border-radius: 20px;
       font-size: 0.85rem;
       font-weight: 700;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
 
     .badge-dot {
@@ -317,9 +327,13 @@
       color: var(--primary);
       text-decoration: none;
       font-weight: 600;
+      transition: color 0.2s;
     }
 
-    .deliverable-card a:hover { text-decoration: underline; }
+    .deliverable-card a:hover {
+      text-decoration: underline;
+      color: var(--primary-hover);
+    }
 
     .ai-box {
       background: var(--primary-light);
@@ -387,6 +401,7 @@
         <a href="#about">About</a>
         <a href="#capabilities">Capabilities</a>
         <a href="#portfolio">Projects</a>
+        <a href="#governance">Governance</a>
         <a href="#ai-operations">AI Operations</a>
       </nav>
       <a href="mailto:shehwarsajid81@gmail.com" class="btn btn-outline">Let's Connect</a>
@@ -397,6 +412,9 @@
 
     <!-- Hero Section -->
     <section class="hero" style="border-top: none;">
+      <!-- Profile Picture -->
+      <img src="profile.jpg" alt="Shehwar Sajid" class="profile-img">
+      
       <div class="badge">
         <span class="badge-dot"></span>
         Available for Strategic Roles & Content Operations
@@ -504,30 +522,30 @@
           <div class="deliverable-card">
             <h4>Vendor Profiles</h4>
             <ul>
-              <li>Don John by Victoria Charles</li>
-              <li>Herbal Connections</li>
-              <li>Closeoutsareus</li>
-              <li>JHP-Collection</li>
+              <li><a href="https://www.seebiz.com/vendor/don-john-by-victoria-charles" target="_blank">Don John by Victoria Charles ↗</a></li>
+              <li><a href="https://www.seebiz.com/vendor/herbal-connections" target="_blank">Herbal Connections ↗</a></li>
+              <li><a href="https://www.seebiz.com/vendor/closeoutsareus" target="_blank">Closeoutsareus ↗</a></li>
+              <li><a href="https://www.seebiz.com/vendor/jhp-collection" target="_blank">JHP-Collection ↗</a></li>
             </ul>
           </div>
 
           <div class="deliverable-card">
             <h4>Category Copywriting</h4>
             <ul>
-              <li>Halloween Costumes</li>
-              <li>Kids' Clothing</li>
-              <li>Corsets Collection</li>
-              <li>Purses & Handbags</li>
+              <li><a href="https://www.seebiz.com/app/search?query=halloween-costume" target="_blank">Halloween Costumes Category ↗</a></li>
+              <li><a href="https://www.seebiz.com/app/search?query=kids-clothing" target="_blank">Kids' Clothing Category ↗</a></li>
+              <li><a href="https://www.seebiz.com/app/search?query=corset" target="_blank">Corsets Collection ↗</a></li>
+              <li><a href="https://www.seebiz.com/app/search?query=purse" target="_blank">Purses & Handbags Category ↗</a></li>
             </ul>
           </div>
 
           <div class="deliverable-card">
             <h4>Social Media Strategy</h4>
             <ul>
-              <li>LinkedIn: SeeBiz Inc.</li>
-              <li>Instagram: SeeBiz US</li>
-              <li>X (Twitter): SeeBiz</li>
-              <li>Facebook: SeeBiz Inc.</li>
+              <li><a href="https://www.linkedin.com/company/seebiz" target="_blank">LinkedIn: SeeBiz Inc. ↗</a></li>
+              <li><a href="https://www.instagram.com/seebizus/" target="_blank">Instagram: SeeBiz US ↗</a></li>
+              <li><a href="https://x.com/seebizinc" target="_blank">X (Twitter): SeeBiz ↗</a></li>
+              <li><a href="https://www.facebook.com/seebizinc/" target="_blank">Facebook: SeeBiz Inc. ↗</a></li>
             </ul>
           </div>
         </div>
@@ -545,8 +563,8 @@
           <div class="deliverable-card">
             <h4>Web Copy & Hubs</h4>
             <ul>
-              <li>Homepage Copywriting & Brand Messaging</li>
-              <li>Kratom Educational Learning Centre Guide</li>
+              <li><a href="https://klaritykratom.com/" target="_blank">Homepage Copywriting & Brand Messaging ↗</a></li>
+              <li><a href="https://klaritykratom.com/learning-center/" target="_blank">Kratom Educational Learning Centre Guide ↗</a></li>
             </ul>
           </div>
 
@@ -555,8 +573,8 @@
             <ul>
               <li><a href="https://klaritykratom.com/blog/kratom-strains/understanding-kratom-batches/" target="_blank">Why Do Batches Vary? Alkaloids & Natural Variation ↗</a></li>
               <li><a href="https://klaritykratom.com/blog/kratom-news/current-state-of-kratom-legality-in-us/" target="_blank">State of Kratom Legality in US: Regulatory Guide ↗</a></li>
-              <li>A Day in the Life of Klarity Kratom — From Website to Door</li>
-              <li>Kratom Usage Statistics & Industry Data</li>
+              <li><a href="https://klaritykratom.com/blog/" target="_blank">A Day in the Life of Klarity Kratom — From Website to Door ↗</a></li>
+              <li><a href="https://klaritykratom.com/blog/" target="_blank">Kratom Usage Statistics & Industry Data ↗</a></li>
             </ul>
           </div>
         </div>
@@ -574,7 +592,7 @@
           <div class="deliverable-card">
             <h4>Technical Documentation</h4>
             <ul>
-              <li>Product Requirements Document (PRD): A Guide with Turnfeat</li>
+              <li><a href="https://turnfeat.ai/" target="_blank">Product Requirements Document (PRD): A Guide with Turnfeat ↗</a></li>
             </ul>
           </div>
         </div>
@@ -592,7 +610,7 @@
           <div class="deliverable-card">
             <h4>Amazon Listings</h4>
             <ul>
-              <li>Multiple Herbal Supplement Amazon Product Listings</li>
+              <li><a href="https://www.amazon.com/s?k=Herviva" target="_blank">Multiple Herbal Supplement Amazon Product Listings ↗</a></li>
             </ul>
           </div>
         </div>
@@ -610,11 +628,36 @@
           <div class="deliverable-card">
             <h4>Social Media Channels</h4>
             <ul>
-              <li>LinkedIn: Qalam IT</li>
-              <li>Instagram: Qalam IT</li>
-              <li>Facebook: Qalam Training Programs</li>
+              <li><a href="https://www.linkedin.com/company/qalam-it" target="_blank">LinkedIn: Qalam IT ↗</a></li>
+              <li><a href="https://www.instagram.com/qalam.it/" target="_blank">Instagram: Qalam IT ↗</a></li>
+              <li><a href="https://www.facebook.com/qalamit" target="_blank">Facebook: Qalam Training Programs ↗</a></li>
             </ul>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Governance Section -->
+    <section id="governance">
+      <div class="section-header">
+        <h2 class="section-title">Editorial Governance & SOPs</h2>
+        <p class="section-desc">Establishing publication standards, team mentoring, and quality control.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">📐</div>
+          <h3>Style Guides & Grading Policies</h3>
+          <p>Designed comprehensive style guides and content grading frameworks to standardize voice, formatting, and SEO compliance across all published assets.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🎓</div>
+          <h3>Trainee Editing & Mentorship</h3>
+          <p>Manually reviewed, line-edited, and mentored 200+ trainee writer submissions, building actionable feedback loops to accelerate team skill growth.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⚖️</div>
+          <h3>Regulatory Legal Tracking</h3>
+          <p>Maintained 100% compliance standards across botanical and regulatory topics through ongoing legal research and fact-checking protocols.</p>
         </div>
       </div>
     </section>
