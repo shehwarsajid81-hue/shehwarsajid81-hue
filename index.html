@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shehwar Sajid | Senior Content Strategist, Writer & AI Operations Specialist</title>
-  <meta name="description" content="6+ years of experience in B2B e-commerce, SEO content strategy, editorial leadership, regulatory legal tracking, and AI workflow engineering.">
+  <title>Shehwar Sajid | Senior Content Strategist & Writer</title>
+  <meta name="description" content="6+ years of SEO writing, editorial management, and content strategy for B2B e-commerce, software, and regulated industries. MBA in Finance.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
@@ -35,7 +35,7 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
 
     header {
       background: rgba(255, 255, 255, 0.95);
@@ -51,7 +51,7 @@
 
     .logo {
       font-family: var(--font-heading);
-      font-size: 1.35rem;
+      font-size: 1.25rem;
       font-weight: 700;
       color: var(--text-heading);
       text-decoration: none;
@@ -65,13 +65,11 @@
       color: var(--text-muted);
       text-decoration: none;
       font-weight: 600;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       transition: color 0.2s;
     }
 
     nav a:hover { color: var(--primary); }
-
-    .nav-actions { display: flex; gap: 10px; align-items: center; }
 
     .btn {
       display: inline-flex;
@@ -90,7 +88,7 @@
     .btn-primary {
       background-color: var(--primary);
       color: #FFFFFF;
-      box-shadow: 0 4px 12px rgba(67, 56, 202, 0.2);
+      box-shadow: 0 4px 12px rgba(67, 56, 202, 0.18);
     }
 
     .btn-primary:hover {
@@ -110,38 +108,29 @@
       background-color: var(--primary-light);
     }
 
-    .btn-whatsapp {
-      background-color: #25D366;
-      color: #FFFFFF;
-      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
-    }
-
-    .btn-whatsapp:hover {
-      background-color: #1DA851;
-      transform: translateY(-1px);
-    }
-
     .btn-linkedin {
       background-color: #0A66C2;
       color: #FFFFFF;
-      box-shadow: 0 4px 12px rgba(10, 102, 194, 0.2);
     }
 
-    .btn-linkedin:hover {
-      background-color: #084E96;
-      transform: translateY(-1px);
-    }
+    .btn-linkedin:hover { background-color: #084E96; }
 
-    .hero { padding: 60px 0 50px; }
+    .hero { padding: 50px 0 40px; }
+
+    .hero-header-flex {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 20px;
+    }
 
     .profile-img {
-      width: 130px;
-      height: 130px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid var(--primary-light);
-      box-shadow: 0 4px 16px rgba(67, 56, 202, 0.12);
-      margin-bottom: 20px;
+      border: 3px solid var(--primary-light);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     }
 
     .badge {
@@ -155,7 +144,6 @@
       border-radius: 20px;
       font-size: 0.85rem;
       font-weight: 700;
-      margin-bottom: 20px;
     }
 
     .badge-dot {
@@ -167,115 +155,103 @@
 
     .hero h1 {
       font-family: var(--font-heading);
-      font-size: 3.1rem;
-      line-height: 1.2;
+      font-size: 2.75rem;
+      line-height: 1.25;
       color: var(--text-heading);
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       letter-spacing: -0.02em;
     }
 
     .hero h1 span { color: var(--primary); }
 
     .hero-subtitle {
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       color: var(--text-body);
-      max-width: 780px;
-      margin-bottom: 32px;
+      max-width: 800px;
+      margin-bottom: 28px;
+      line-height: 1.65;
     }
 
     .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
 
     .metrics-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      margin-top: 48px;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+      margin-top: 40px;
     }
 
     .metric-card {
       background: var(--bg-surface);
       border: 1px solid var(--border-light);
-      padding: 24px;
+      padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
     }
 
-    .metric-card h3 {
+    .metric-card-title {
       font-family: var(--font-heading);
-      font-size: 2.2rem;
+      font-size: 1.8rem;
+      font-weight: 700;
       color: var(--primary);
       margin-bottom: 4px;
     }
 
-    .metric-card p {
+    .metric-card-desc {
       color: var(--text-muted);
-      font-size: 0.88rem;
+      font-size: 0.85rem;
       font-weight: 600;
       line-height: 1.4;
     }
 
-    section { padding: 64px 0; border-top: 1px solid var(--border-light); }
+    section { padding: 56px 0; border-top: 1px solid var(--border-light); }
 
-    .section-header { margin-bottom: 36px; }
+    .section-header { margin-bottom: 32px; }
 
     .section-title {
       font-family: var(--font-heading);
-      font-size: 2.1rem;
+      font-size: 1.85rem;
       color: var(--text-heading);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
-    .section-desc { color: var(--text-muted); font-size: 1.05rem; }
+    .section-desc { color: var(--text-muted); font-size: 1rem; }
 
     .about-card {
       background: var(--bg-surface);
       border: 1px solid var(--border-light);
-      border-radius: 16px;
-      padding: 36px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.02);
-    }
-
-    .about-card p { margin-bottom: 16px; font-size: 1.05rem; line-height: 1.7; }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 24px;
-    }
-
-    .service-card {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-light);
-      border-radius: 12px;
+      border-radius: 14px;
       padding: 32px;
-      transition: all 0.2s ease;
     }
 
-    .service-card:hover {
-      border-color: var(--primary);
-      box-shadow: 0 8px 24px rgba(67, 56, 202, 0.08);
-      transform: translateY(-2px);
+    .about-card p { margin-bottom: 16px; font-size: 1rem; line-height: 1.7; }
+    .about-card p:last-child { margin-bottom: 0; }
+
+    .history-timeline { display: flex; flex-direction: column; gap: 20px; margin-top: 24px; }
+
+    .timeline-item {
+      padding-left: 20px;
+      border-left: 3px solid var(--primary-light);
     }
 
-    .service-icon {
-      font-size: 2rem;
-      margin-bottom: 16px;
-    }
-
-    .service-card h3 {
+    .timeline-item h4 {
       font-family: var(--font-heading);
-      font-size: 1.25rem;
       color: var(--text-heading);
-      margin-bottom: 12px;
+      font-size: 1.1rem;
+    }
+
+    .timeline-meta {
+      font-size: 0.85rem;
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 6px;
     }
 
     .project-block {
       background: var(--bg-surface);
       border: 1px solid var(--border-light);
-      border-radius: 16px;
+      border-radius: 14px;
       padding: 32px;
-      margin-bottom: 32px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.02);
+      margin-bottom: 28px;
     }
 
     .project-badge {
@@ -293,114 +269,124 @@
 
     .project-header h3 {
       font-family: var(--font-heading);
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       color: var(--text-heading);
+      margin-bottom: 8px;
+    }
+
+    .case-study-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+      background: var(--bg-page);
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid var(--border-light);
+    }
+
+    .case-study-box h5 {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
       margin-bottom: 6px;
     }
 
-    .project-header p {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-      margin-bottom: 24px;
+    .case-study-box p {
+      font-size: 0.92rem;
+      color: var(--text-body);
+      line-height: 1.5;
     }
 
     .deliverables-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
     }
 
     .deliverable-card {
       background: var(--bg-page);
       border: 1px solid var(--border-light);
-      border-radius: 10px;
-      padding: 20px;
+      border-radius: 8px;
+      padding: 18px;
     }
 
     .deliverable-card h4 {
       font-family: var(--font-heading);
-      font-size: 0.98rem;
+      font-size: 0.95rem;
       color: var(--text-heading);
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       border-bottom: 2px solid var(--border-accent);
-      padding-bottom: 6px;
+      padding-bottom: 4px;
     }
 
-    .deliverable-card ul {
-      list-style: none;
-      padding: 0;
-    }
+    .deliverable-card ul { list-style: none; padding: 0; }
 
     .deliverable-card li {
       font-size: 0.88rem;
       color: var(--text-body);
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       line-height: 1.4;
-      display: flex;
-      align-items: flex-start;
-      gap: 6px;
-    }
-
-    .deliverable-card li::before {
-      content: "•";
-      color: var(--primary);
-      font-weight: bold;
     }
 
     .deliverable-card a {
       color: var(--primary);
       text-decoration: none;
       font-weight: 600;
-      transition: color 0.2s;
     }
 
-    .deliverable-card a:hover {
-      text-decoration: underline;
-      color: var(--primary-hover);
-    }
+    .deliverable-card a:hover { text-decoration: underline; }
 
     .ai-box {
-      background: var(--primary-light);
-      border: 1px solid var(--border-accent);
-      border-radius: 16px;
-      padding: 36px;
-    }
-
-    .ai-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      margin-top: 24px;
-    }
-
-    .ai-item {
       background: var(--bg-surface);
       border: 1px solid var(--border-light);
-      padding: 24px;
-      border-radius: 12px;
+      border-radius: 14px;
+      padding: 32px;
     }
 
-    .ai-item h4 {
+    .ai-steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .ai-step-card {
+      background: var(--bg-page);
+      border: 1px solid var(--border-light);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .ai-step-card h4 {
       font-family: var(--font-heading);
       color: var(--text-heading);
+      font-size: 1.05rem;
       margin-bottom: 8px;
-      font-size: 1.1rem;
+    }
+
+    .ai-step-card p {
+      font-size: 0.9rem;
+      color: var(--text-body);
+      line-height: 1.5;
     }
 
     footer {
-      padding: 40px 0;
+      padding: 36px 0;
       text-align: center;
       color: var(--text-muted);
       font-size: 0.9rem;
       border-top: 1px solid var(--border-light);
     }
 
-    .footer-contacts {
+    .footer-links {
       display: flex;
       justify-content: center;
       gap: 16px;
-      margin-bottom: 20px;
-      flex-wrap: wrap;
+      margin-bottom: 16px;
     }
 
     .toast {
@@ -409,18 +395,18 @@
       right: 24px;
       background: var(--text-heading);
       color: #FFFFFF;
-      padding: 12px 24px;
+      padding: 12px 20px;
       border-radius: 8px;
+      font-size: 0.9rem;
       font-weight: 700;
       display: none;
       z-index: 1000;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     }
 
     @media (max-width: 768px) {
-      .hero h1 { font-size: 2.25rem; }
+      .hero h1 { font-size: 2.1rem; }
       nav { display: none; }
-      .deliverables-grid { grid-template-columns: 1fr; }
+      .hero-header-flex { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
@@ -430,15 +416,13 @@
     <div class="container nav-wrapper">
       <a href="#" class="logo">Shehwar<span>.</span>Sajid</a>
       <nav>
-        <a href="#about">About</a>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#portfolio">Projects</a>
-        <a href="#governance">Governance</a>
-        <a href="#ai-operations">AI Operations</a>
+        <a href="#about">About & Background</a>
+        <a href="#portfolio">Featured Case Studies</a>
+        <a href="#governance">Editorial Standards</a>
+        <a href="#ai-workflow">AI & Workflows</a>
       </nav>
-      <div class="nav-actions">
-        <a href="https://wa.me/923249880105" target="_blank" class="btn btn-whatsapp">💬 WhatsApp</a>
-        <a href="mailto:shehwarsajid81@gmail.com" class="btn btn-outline">✉️ Email</a>
+      <div>
+        <a href="mailto:shehwarsajid81@gmail.com" class="btn btn-primary">Contact Me</a>
       </div>
     </div>
   </header>
@@ -447,143 +431,122 @@
 
     <!-- Hero Section -->
     <section class="hero" style="border-top: none;">
-      <!-- Profile Picture -->
-      <img src="profile.jpg" alt="Shehwar Sajid" class="profile-img">
-      
-      <div class="badge">
-        <span class="badge-dot"></span>
-        Available for Strategic Roles & Content Operations
+      <div class="hero-header-flex">
+        <img src="profile.jpg" alt="Shehwar Sajid" class="profile-img">
+        <div>
+          <div class="badge">
+            <span class="badge-dot"></span>
+            Based in Lahore, Pakistan • Open for Remote & Onsite Roles
+          </div>
+          <h1 style="margin-top: 10px; margin-bottom: 0;">Shehwar Sajid</h1>
+          <p style="font-size: 1.2rem; font-weight: 700; color: var(--primary);">Senior Content Strategist & Writer</p>
+        </div>
       </div>
-      <h1>Senior Content Strategist, Writer & <span>AI Operations</span> Specialist</h1>
+
       <p class="hero-subtitle">
-        6+ years of experience turning complex topics into search-authoritative content engines. Bridging search intent (E-E-A-T) with custom LLM prompt architectures to accelerate editorial operations across B2B, RegTech, and E-Commerce.
+        I turn complex industry topics into clear, structured, search-ready content. Over 6 years of experience managing content workflows across B2B wholesale e-commerce, software documentation, and regulatory sectors, pairing high production volume with strict editorial governance and human-guided AI efficiency.
       </p>
-      
+
       <div class="hero-cta">
-        <a href="https://wa.me/923249880105" target="_blank" class="btn btn-whatsapp">💬 WhatsApp Chat</a>
+        <a href="mailto:shehwarsajid81@gmail.com" class="btn btn-primary">✉️ Email Shehwar</a>
         <a href="https://linkedin.com/in/shehwar-sajid-a32672192" target="_blank" class="btn btn-linkedin">🔗 LinkedIn Profile</a>
-        <a href="tel:+923249880105" class="btn btn-outline">📞 +92 324 9880105</a>
         <button onclick="copyEmail()" class="btn btn-outline">📋 Copy Email</button>
       </div>
 
       <!-- Verified Metric Highlights -->
       <div class="metrics-grid">
         <div class="metric-card">
-          <h3>6+ Years</h3>
-          <p>Editorial Leadership & Content Strategy</p>
+          <div class="metric-card-title">6+ Years</div>
+          <div class="metric-card-desc">B2B Content Strategy & Writing Experience</div>
         </div>
         <div class="metric-card">
-          <h3>3,500+</h3>
-          <p>Catalog Descriptions Across 150+ Niches</p>
+          <div class="metric-card-title">3,500+</div>
+          <div class="metric-card-desc">Product & Directory Catalog Entries Created</div>
         </div>
         <div class="metric-card">
-          <h3>70% Faster</h3>
-          <p>Production Efficiency via Trained AI Agents</p>
+          <div class="metric-card-title">70% Faster</div>
+          <div class="metric-card-desc">Catalog Drafting Time via Structured AI Prompting</div>
         </div>
         <div class="metric-card">
-          <h3>200+</h3>
-          <p>Trainee Articles Governed & Mentored</p>
+          <div class="metric-card-title">200+</div>
+          <div class="metric-card-desc">Trainee Submissions Reviewed & Mentored</div>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About & Work History Section -->
     <section id="about">
       <div class="section-header">
-        <h2 class="section-title">Strategic Approach</h2>
-        <p class="section-desc">Connecting search intent, editorial governance, and modern AI automation.</p>
+        <h2 class="section-title">Background & Career History</h2>
+        <p class="section-desc">Academic foundation and hands-on content operations experience.</p>
       </div>
+      
       <div class="about-card">
         <p>
-          I specialize in building sustainable organic search visibility across B2B marketplaces, supply chain logistics, e-commerce platforms, and regulatory compliance sectors. High-performing content isn't just about keyword output—it is about answering target user intent while fulfilling strict Google E-E-A-T standards.
+          My background combines commercial strategy (MBA in Finance) with hands-on content operations. Over six years at <strong>SeeBiz Pvt Ltd</strong>, I managed large-scale publishing pipelines, created thousands of commercial catalog pages, and established standard operating procedures (SOPs) for junior writers.
         </p>
-        <p>
-          By pairing manual editorial standards (style guides, grading policies) with trained ChatGPT and Claude prompt workflows, I help brand teams scale publication output without losing human nuances or factual integrity.
-        </p>
-      </div>
-    </section>
 
-    <!-- Capabilities Section -->
-    <section id="capabilities">
-      <div class="section-header">
-        <h2 class="section-title">Core Capabilities</h2>
-        <p class="section-desc">End-to-end editorial management, technical writing, and automated workflows.</p>
-      </div>
+        <div class="history-timeline">
+          <div class="timeline-item">
+            <h4>Executive Content Writer & Strategist — SeeBiz Pvt Ltd</h4>
+            <div class="timeline-meta">2020 – Present | Lahore, Pakistan</div>
+            <p style="font-size: 0.93rem;">Managed B2B marketplace content output. Authored 300+ long-form industry articles, structured 3,500+ vendor catalog descriptions across 11 core industries (150+ sub-niches), and created training style guides for incoming writers.</p>
+          </div>
 
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">🔍</div>
-          <h3>Content Strategy & SEO</h3>
-          <p>Topical authority maps, keyword clustering, competitor gap analysis, and search intent alignment built to drive domain rank.</p>
-        </div>
+          <div class="timeline-item">
+            <h4>Freelance Content Writer — Self-Employed</h4>
+            <div class="timeline-meta">2018 – 2020 | Lahore, Pakistan</div>
+            <p style="font-size: 0.93rem;">Produced research-backed articles, e-commerce listings, and product guides for niche retail, herbal supplement, and software clients.</p>
+          </div>
 
-        <div class="service-card">
-          <div class="service-icon">🤖</div>
-          <h3>AI Workflow Operations</h3>
-          <p>Engineering customized prompt frameworks for ChatGPT & Claude to automate metadata, product descriptions, and first-pass editing.</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">✍️</div>
-          <h3>B2B & Technical Writing</h3>
-          <p>In-depth technical guides across wholesale e-commerce, inventory logistics, US regulatory legal tracking, and software PRDs.</p>
+          <div class="timeline-item">
+            <h4>Master of Business Administration (MBA) — Finance</h4>
+            <div class="timeline-meta">University of the Punjab, Lahore (2015 – 2019)</div>
+            <p style="font-size: 0.93rem;">Specialized in financial analysis, business strategy, and commercial operations.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Brand-by-Brand Portfolio Section -->
+    <!-- Case Studies & Projects Section -->
     <section id="portfolio">
       <div class="section-header">
-        <h2 class="section-title">Featured Projects & Deliverables</h2>
-        <p class="section-desc">A brand-by-brand showcase of content strategy, SEO writing, E-commerce copywriting, and technical documentation.</p>
+        <h2 class="section-title">Featured Work & Case Studies</h2>
+        <p class="section-desc">Practical content strategy, technical writing, and catalog architecture samples.</p>
       </div>
 
       <!-- Project 1: SeeBiz Marketplace -->
       <div class="project-block">
-        <div class="project-header">
-          <span class="project-badge">B2B & Wholesale E-Commerce</span>
-          <h3>SeeBiz Marketplace</h3>
-          <p>End-to-end editorial writing, category architecture across 11 industries & 150+ niches, vendor profile creation, and social strategy.</p>
+        <span class="project-badge">B2B E-Commerce & Supply Chain</span>
+        <h3>SeeBiz Marketplace Content Architecture</h3>
+
+        <div class="case-study-grid">
+          <div class="case-study-box">
+            <h5>The Challenge</h5>
+            <p>Structure and populate a multi-vendor wholesale B2B marketplace covering thousands of inventory items across 11 major industries.</p>
+          </div>
+          <div class="case-study-box">
+            <h5>Execution</h5>
+            <p>Authored 300+ educational blog posts on inventory management, created 3,500+ standardized product entries, and wrote vendor profiles for onboarding wholesalers.</p>
+          </div>
         </div>
 
         <div class="deliverables-grid">
           <div class="deliverable-card">
-            <h4>Onsite SEO Blogs</h4>
+            <h4>Selected Blog Articles</h4>
             <ul>
-              <li><a href="https://www.seebiz.com/blog/why-do-wholesalers-need-an-automated-inventory-system/" target="_blank">Why Do Wholesalers Need an Automated Inventory System? ↗</a></li>
-              <li><a href="https://www.seebiz.com/blog/distributors/" target="_blank">What Are Distributors and Their Role in the Supply Chain ↗</a></li>
-              <li><a href="https://www.seebiz.com/blog/wholesale-inventory-management-everything-that-you-should-know/" target="_blank">Wholesale Inventory Management: Complete Guide ↗</a></li>
-              <li><a href="https://www.seebiz.com/blog/procurement-and-supply-chain-management/" target="_blank">How Procurement and Supply Chain Management Are Related ↗</a></li>
+              <li>• <a href="https://www.seebiz.com/blog/why-do-wholesalers-need-an-automated-inventory-system/" target="_blank">Automated Inventory Systems Guide ↗</a></li>
+              <li>• <a href="https://www.seebiz.com/blog/distributors/" target="_blank">Distributors Role in Supply Chain ↗</a></li>
+              <li>• <a href="https://www.seebiz.com/blog/wholesale-inventory-management-everything-that-you-should-know/" target="_blank">Wholesale Inventory Management ↗</a></li>
             </ul>
           </div>
 
           <div class="deliverable-card">
-            <h4>Vendor Profiles</h4>
+            <h4>Directory & Categories</h4>
             <ul>
-              <li><a href="https://www.seebiz.com/vendor/don-john-by-victoria-charles" target="_blank">Don John by Victoria Charles ↗</a></li>
-              <li><a href="https://www.seebiz.com/vendor/herbal-connections" target="_blank">Herbal Connections ↗</a></li>
-              <li><a href="https://www.seebiz.com/vendor/closeoutsareus" target="_blank">Closeoutsareus ↗</a></li>
-              <li><a href="https://www.seebiz.com/vendor/jhp-collection" target="_blank">JHP-Collection ↗</a></li>
-            </ul>
-          </div>
-
-          <div class="deliverable-card">
-            <h4>Category Copywriting</h4>
-            <ul>
-              <li><a href="https://www.seebiz.com/app/search?query=halloween-costume" target="_blank">Halloween Costumes Category ↗</a></li>
-              <li><a href="https://www.seebiz.com/app/search?query=kids-clothing" target="_blank">Kids' Clothing Category ↗</a></li>
-              <li><a href="https://www.seebiz.com/app/search?query=corset" target="_blank">Corsets Collection ↗</a></li>
-              <li><a href="https://www.seebiz.com/app/search?query=purse" target="_blank">Purses & Handbags Category ↗</a></li>
-            </ul>
-          </div>
-
-          <div class="deliverable-card">
-            <h4>Social Media Strategy</h4>
-            <ul>
-              <li><a href="https://www.linkedin.com/company/seebiz" target="_blank">LinkedIn: SeeBiz Inc. ↗</a></li>
-              <li><a href="https://www.instagram.com/seebizus/" target="_blank">Instagram: SeeBiz US ↗</a></li>
-              <li><a href="https://x.com/seebizinc" target="_blank">X (Twitter): SeeBiz ↗</a></li>
-              <li><a href="https://www.facebook.com/seebizinc/" target="_blank">Facebook: SeeBiz Inc. ↗</a></li>
+              <li>• Structured 150+ sub-niches</li>
+              <li>• Kids' Clothing Category Copy</li>
+              <li>• Wholesale Accessories Catalog Copy</li>
             </ul>
           </div>
         </div>
@@ -591,28 +554,26 @@
 
       <!-- Project 2: Klarity Kratom -->
       <div class="project-block">
-        <div class="project-header">
-          <span class="project-badge">Regulatory & Botanical E-Commerce</span>
-          <h3>Klarity Kratom</h3>
-          <p>Technical writing, homepage messaging, educational learning hub creation, and US state-by-state regulatory legal tracking.</p>
+        <span class="project-badge">Botanical & Legal Compliance</span>
+        <h3>Klarity Kratom Regulatory & Educational Writing</h3>
+
+        <div class="case-study-grid">
+          <div class="case-study-box">
+            <h5>The Challenge</h5>
+            <p>Produce clear, informative educational content in a heavily regulated botanical category without making medical or non-compliant claims.</p>
+          </div>
+          <div class="case-study-box">
+            <h5>Execution</h5>
+            <p>Maintained strict adherence to FDA disclaimer requirements and state-by-state legality updates, publishing objective educational resource guides.</p>
+          </div>
         </div>
 
         <div class="deliverables-grid">
           <div class="deliverable-card">
-            <h4>Web Copy & Hubs</h4>
+            <h4>Published Technical Articles</h4>
             <ul>
-              <li><a href="https://klaritykratom.com/" target="_blank">Homepage Copywriting & Brand Messaging ↗</a></li>
-              <li><a href="https://klaritykratom.com/learning-center/" target="_blank">Kratom Educational Learning Centre Guide ↗</a></li>
-            </ul>
-          </div>
-
-          <div class="deliverable-card">
-            <h4>In-Depth Technical Blogs</h4>
-            <ul>
-              <li><a href="https://klaritykratom.com/blog/kratom-strains/understanding-kratom-batches/" target="_blank">Why Do Batches Vary? Alkaloids & Natural Variation ↗</a></li>
-              <li><a href="https://klaritykratom.com/blog/kratom-news/current-state-of-kratom-legality-in-us/" target="_blank">State of Kratom Legality in US: Regulatory Guide ↗</a></li>
-              <li><a href="https://klaritykratom.com/blog/" target="_blank">A Day in the Life of Klarity Kratom — From Website to Door ↗</a></li>
-              <li><a href="https://klaritykratom.com/blog/" target="_blank">Kratom Usage Statistics & Industry Data ↗</a></li>
+              <li>• <a href="https://klaritykratom.com/blog/kratom-strains/understanding-kratom-batches/" target="_blank">Understanding Alkaloid & Batch Variation ↗</a></li>
+              <li>• <a href="https://klaritykratom.com/blog/kratom-news/current-state-of-kratom-legality-in-us/" target="_blank">US Legal & Regulatory State Guide ↗</a></li>
             </ul>
           </div>
         </div>
@@ -620,106 +581,63 @@
 
       <!-- Project 3: Turnfeat AI -->
       <div class="project-block">
-        <div class="project-header">
-          <span class="project-badge">AI & Software Documentation</span>
-          <h3>Turnfeat AI</h3>
-          <p>Technical product requirements documentation and software framework guides.</p>
-        </div>
-
-        <div class="deliverables-grid">
-          <div class="deliverable-card">
-            <h4>Technical Documentation</h4>
-            <ul>
-              <li><a href="https://turnfeat.ai/" target="_blank">Product Requirements Document (PRD): A Guide with Turnfeat ↗</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 4: Amazon & E-Commerce -->
-      <div class="project-block">
-        <div class="project-header">
-          <span class="project-badge">Amazon Listing Copywriting</span>
-          <h3>Herviva (Herbal Supplements)</h3>
-          <p>SEO-optimized product titles, feature bullet points, and catalog descriptions.</p>
-        </div>
-
-        <div class="deliverables-grid">
-          <div class="deliverable-card">
-            <h4>Amazon Listings</h4>
-            <ul>
-              <li><a href="https://www.amazon.com/s?k=Herviva" target="_blank">Multiple Herbal Supplement Amazon Product Listings ↗</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 5: Qalam IT -->
-      <div class="project-block">
-        <div class="project-header">
-          <span class="project-badge">EdTech & Social Strategy</span>
-          <h3>Qalam IT</h3>
-          <p>Multi-channel social campaigns and educational content strategy.</p>
-        </div>
-
-        <div class="deliverables-grid">
-          <div class="deliverable-card">
-            <h4>Social Media Channels</h4>
-            <ul>
-              <li><a href="https://www.linkedin.com/company/qalam-it" target="_blank">LinkedIn: Qalam IT ↗</a></li>
-              <li><a href="https://www.instagram.com/qalam.it/" target="_blank">Instagram: Qalam IT ↗</a></li>
-              <li><a href="https://www.facebook.com/qalamit" target="_blank">Facebook: Qalam Training Programs ↗</a></li>
-            </ul>
-          </div>
-        </div>
+        <span class="project-badge">Software Documentation</span>
+        <h3>Turnfeat AI Technical Requirements Guide</h3>
+        <p style="font-size: 0.95rem; margin-top: 8px;">Authored foundational Product Requirement Document (PRD) structures explaining software architecture, functional requirements, and feature scope for technical stakeholders.</p>
       </div>
     </section>
 
     <!-- Editorial Governance Section -->
     <section id="governance">
       <div class="section-header">
-        <h2 class="section-title">Editorial Governance & SOPs</h2>
-        <p class="section-desc">Establishing publication standards, team mentoring, and quality control.</p>
+        <h2 class="section-title">Editorial Governance & Quality Control</h2>
+        <p class="section-desc">How I maintain quality standards across high-volume production teams.</p>
       </div>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">📐</div>
-          <h3>Style Guides & Grading Policies</h3>
-          <p>Designed comprehensive style guides and content grading frameworks to standardize voice, formatting, and SEO compliance across all published assets.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">🎓</div>
-          <h3>Trainee Editing & Mentorship</h3>
-          <p>Manually reviewed, line-edited, and mentored 200+ trainee writer submissions, building actionable feedback loops to accelerate team skill growth.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">⚖️</div>
-          <h3>Regulatory Legal Tracking</h3>
-          <p>Maintained 100% compliance standards across botanical and regulatory topics through ongoing legal research and fact-checking protocols.</p>
+
+      <div class="about-card">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+          <div>
+            <h4 style="font-family: var(--font-heading); color: var(--text-heading); margin-bottom: 6px;">📐 Internal Style Guides</h4>
+            <p style="font-size: 0.9rem;">Developed standardized editorial guidelines at SeeBiz defining brand voice, formatting requirements, and structural expectations for commercial copy.</p>
+          </div>
+          <div>
+            <h4 style="font-family: var(--font-heading); color: var(--text-heading); margin-bottom: 6px;">🎓 Mentoring & Review (200+ Pieces)</h4>
+            <p style="font-size: 0.9rem;">Executed line edits, structural revisions, and 1-on-1 feedback sessions for 200+ trainee writer articles to ensure adherence to quality policies.</p>
+          </div>
+          <div>
+            <h4 style="font-family: var(--font-heading); color: var(--text-heading); margin-bottom: 6px;">🔍 Fact-Checking Protocols</h4>
+            <p style="font-size: 0.9rem;">Implemented multi-pass fact-checking routines for regulatory, legal, and technical topics to eliminate inaccuracies prior to publishing.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- AI Operations Section -->
-    <section id="ai-operations">
+    <!-- AI Workflows Section -->
+    <section id="ai-workflow">
       <div class="ai-box">
-        <div class="section-header" style="margin-bottom: 20px;">
-          <h2 class="section-title">🤖 AI Operations & Prompt Engineering</h2>
-          <p class="section-desc">Automating content workflows without sacrificing human tone or editorial quality.</p>
+        <div class="section-header" style="margin-bottom: 16px;">
+          <h2 class="section-title">Human-in-the-Loop AI Workflows</h2>
+          <p class="section-desc">How I use custom prompt framing to accelerate drafting without losing editorial oversight.</p>
         </div>
 
-        <div class="ai-grid">
-          <div class="ai-item">
-            <h4>⚡ 1,100-Word Product Description Engines</h4>
-            <p>Trained prompt structures for ChatGPT agents covering every product aspect, cutting total drafting time by 70%.</p>
+        <p style="font-size: 0.95rem; line-height: 1.6;">
+          To handle high-volume product catalogs (such as 1,100-word e-commerce guides), I designed structured prompt frameworks that reduced initial drafting time from <strong>~45 minutes down to ~13 minutes per guide (a ~70% time reduction)</strong>. AI is used strictly for structural outlines and first drafts; human editing guarantees factual accuracy and natural phrasing.
+        </p>
+
+        <div class="ai-steps-grid">
+          <div class="ai-step-card">
+            <h4>Step 1: Structural Prompting</h4>
+            <p>Configured system prompts with explicit parameters (specifications, mandatory sections, target audience) to output structured initial drafts.</p>
           </div>
-          <div class="ai-item">
-            <h4>🔍 Automated Metadata & Outline Pipelines</h4>
-            <p>Built system prompts configured to auto-generate SEO meta descriptions, titles, and comprehensive blog outlines at scale.</p>
+
+          <div class="ai-step-card">
+            <h4>Step 2: Human Fact-Checking</h4>
+            <p>Manually verified all technical specifications, supply chain terms, and legal claims against source materials.</p>
           </div>
-          <div class="ai-item">
-            <h4>✍️ First-Pass Editorial Models</h4>
-            <p>Configured system prompts enforcing style guides, readability rules, and brand consistency for rapid first-pass copy editing.</p>
+
+          <div class="ai-step-card">
+            <h4>Step 3: Line Editing</h4>
+            <p>Polished phrasing, removed repetitive language, and formatted copy according to internal brand style guides.</p>
           </div>
         </div>
       </div>
@@ -729,13 +647,11 @@
 
   <footer>
     <div class="container">
-      <div class="footer-contacts">
-        <a href="https://wa.me/923249880105" target="_blank" class="btn btn-whatsapp">💬 WhatsApp</a>
-        <a href="https://linkedin.com/in/shehwar-sajid-a32672192" target="_blank" class="btn btn-linkedin">🔗 LinkedIn</a>
-        <a href="mailto:shehwarsajid81@gmail.com" class="btn btn-outline">✉️ Email</a>
-        <a href="tel:+923249880105" class="btn btn-outline">📞 Call</a>
+      <div class="footer-links">
+        <a href="mailto:shehwarsajid81@gmail.com" class="btn btn-primary">✉️ Email Shehwar</a>
+        <a href="https://linkedin.com/in/shehwar-sajid-a32672192" target="_blank" class="btn btn-linkedin">🔗 LinkedIn Profile</a>
       </div>
-      <p>© 2026 Shehwar Sajid. Built with GitHub Pages.</p>
+      <p>© 2026 Shehwar Sajid • Senior Content Strategist & Writer</p>
     </div>
   </footer>
 
